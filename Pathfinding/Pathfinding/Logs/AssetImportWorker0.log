@@ -1,0 +1,159 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.6f1 (c0fade0cc7e9) revision 12647134'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1586; Version 2009; 64bit' Language: 'en' Physical Memory: 16331 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/44771/Desktop/Pathfinding/Pathfinding
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56852
+Successfully changed project path to: C:/Users/44771/Desktop/Pathfinding/Pathfinding
+C:/Users/44771/Desktop/Pathfinding/Pathfinding
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 72.99 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/44771/Desktop/Pathfinding/Pathfinding/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   30.0.15.1179
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.004459 seconds.
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 76.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.422 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003800 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.126 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2782 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.8 MB.
+System memory in use after: 101.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3235.
+Total: 2.412800 ms (FindLiveObjects: 0.292200 ms CreateObjectMapping: 0.072900 ms MarkObjects: 1.973200 ms  DeleteObjects: 0.073100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/IAgent.cs
+  artifactKey: Guid(d666f64c536e2ec43b7e84d8d08f622b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/IAgent.cs using Guid(d666f64c536e2ec43b7e84d8d08f622b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a370f9fd7052df4bf1b2071a023f8a07') in 0.049691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.886947 seconds.
+  path: Assets/Scripts/ClickAgent.cs
+  artifactKey: Guid(a0811909ecc5ca14f888ecb7790fc8c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ClickAgent.cs using Guid(a0811909ecc5ca14f888ecb7790fc8c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ccd59101c104f3d5e515a04d3bd4c2') in 0.008958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 456.342125 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37759401e288d3be10e9708faa8ea87b') in 0.010956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.588978 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e34c1dc59ce42bf93c1456eb48bc58') in 0.004636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.701350 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2752218e0e8759c67dbba53d7c31de11') in 0.003921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.723325 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c29f135d0b3c8387ab70d20eff864b95') in 0.004128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.726999 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9ed695e5b36a4bec02038bd27854db') in 0.003943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 154.766946 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54dea53e9037bd92177f1e33012f404') in 0.004058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 123.219647 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899677974af2687a362d65bf64555fe3') in 0.004548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.915278 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6e416288b1b5d8d1e07d9266697d21') in 0.004155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.881792 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2443cc42cb7d473753d6f8edcefe027e') in 0.004597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 109.211332 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849c465f990f03a133d0df476f1dc90a') in 0.003768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 97.653839 seconds.
+  path: Assets/Scripts/PathfindingManager.cs
+  artifactKey: Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PathfindingManager.cs using Guid(658290f6e03ca654a8282f1b1d1207a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56df44c3ded1a3dc8b605d383fdbf02b') in 0.004824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 227.036731 seconds.
+  path: Assets/Scripts/Tile.cs
+  artifactKey: Guid(e9c61156fe2703b48afa5c70d897309c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tile.cs using Guid(e9c61156fe2703b48afa5c70d897309c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359a351550d159a98c1da732e3bb8113') in 0.007778 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
