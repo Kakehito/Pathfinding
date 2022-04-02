@@ -3,112 +3,96 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
+[System.Serializable]
+public struct PathRequest
+{
+    public IAgent Agent;
+    public Tile StartTile;
+    public Tile TargetTile;
+
+    public PathRequest(IAgent a, Tile t, Tile c)
+    {
+        Agent = a;
+        StartTile = t;
+        TargetTile = c;
+    }
+}
+
 public class PathfindingManager : MonoBehaviour
 {
-    PathfindingManager manager;
-
-    List<IAgent> agentQueue;
-
-    private void Start()
-    {
-        manager = GetComponent<PathfindingManager>();   
-    }
-
     #region Singleton
     public static PathfindingManager instance;
     public void Awake()
     {
         if (instance == null)
-            instance = this;        
+            instance = this;
     }
     #endregion
 
-    #region Weight
-    public Tile currentTarget;
-    public CustomGrid map;
+    CustomGrid map;
+
+
+    private void Start()
+    {
+        map = GetComponent<CustomGrid>();
+    }
+
+    public List<PathRequest> RequestQueue;
+
 
     [Button]
-    public void SetWeight()
+    public void FufillRequest()
     {
-        CalculateDistance(map.Tiles);
+        CalculatePath(RequestQueue[0]);
     }
 
-    public void CalculateDistance(List<Transform> tileList)
+    public void AddRequest(PathRequest request)
     {
-        foreach(Transform i in tileList)
-        {
-            i.GetComponent<Tile>().addedWeight = Vector3.Distance(i.position, currentTarget.transform.position);
-        }        
+        RequestQueue.Add(request);
     }
-    #endregion
 
-    public void MoveTo(Transform target)
+
+
+    public void CalculatePath(PathRequest request)
     {
-        currentTarget = target.GetComponent<Tile>();
+        Tile _targetTile = request.TargetTile;
+        Tile _current = request.StartTile;
+        List<Tile> _path = new List<Tile>();
 
-        if (currentTarget != manager.currentTarget)
+
+        SetWeight(_targetTile.transform);
+
+
+        while(_current != _targetTile)
         {
-            foreach (Tile t in currentTarget.ReturnTransformList())
+            _current.GetComponent<MeshRenderer>().material.color = Color.red;
+            _path.Add(_current);
+
+            Tile st = gameObject.GetComponent<Tile>();
+            foreach(Tile t in _current.GetNeighbours())
             {
-                if (t.totalWeight <= currentTarget.totalWeight)
-                {
-                    currentTarget = t;
-                }
+                    if(t.startWeight < st.startWeight) { st = t; }
             }
+
+            _current = st;
+        }
+
+
+        _path.Add(_targetTile);
+        request.Agent.SetPath(_path);
+
+    }
+
+
+
+
+ 
+    public void SetWeight(Transform target)
+    {
+        foreach (Transform b in map.GetTiles())
+        {
+            b.GetComponent<Tile>().startWeight = Vector3.Distance(b.position, target.position);  
         }
     }
-
-    public Tile NextTile(Tile next)
-    {
-        List<Tile> pathway = new List<Tile>();
-        Tile temp = new Tile();
-
-        if (next != currentTarget)
-        {
-            foreach(Tile t in next.ReturnTransformList())
-            {
-                if (t.totalWeight <= temp.totalWeight)
-                {
-                    temp = t;                    
-                }
-            }   
-            
-            if(temp!= currentTarget)
-            {
-                NextTile(temp);
-                return null;
-            }
-            else
-            {
-                NextTile(temp);
-            }
-        }
-        
-        return temp;
-    }
-
-    Tile currentTile = new Tile();
-
-    public void Move()
-    {
-        List<Tile> tiles = new List<Tile>();        
-
-        if (currentTile != currentTarget)
-        {
-            currentTile = NextTile();
-        }
-    }
-
-    public void ReceivePathRequest(IAgent agent)
-    {
-        agentQueue.Add(agent); 
-    }
-
-    //public List<Transform> GivePathResult()
-    public void GivePathResult(IAgent agent)
-    {
-        List<Transform> results = new List<Transform>();
-        agent.SetPath(results);
-        agentQueue.Remove(agent);
-    }
+  
 }

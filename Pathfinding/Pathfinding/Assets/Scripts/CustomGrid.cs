@@ -5,31 +5,16 @@ using NaughtyAttributes;
 
 public class CustomGrid : MonoBehaviour
 {
-    public List<Transform> Tiles; 
+    
 
     [OnValueChanged("Arrange")]
     public int width;
 
-    public Transform currentSorted;    
+    public List<Transform> Tiles;
 
-    public void ArrangeRow(int startingIndex=0, int row=0)
-    {
-        int count=0;
 
-        for (int i = startingIndex; i < width+startingIndex; i++)
-        {
-            Tiles[i].position = new Vector3(count, 0, row);
 
-            if (i == Tiles.Count - 1)
-                return;
-
-            count++;
-        }
-
-        ArrangeRow(startingIndex + width, row+1);
-    }
-
-    [Button]
+    [Button("Update")]
     public void Arrange()
     {
         ArrangeRow();
@@ -39,12 +24,12 @@ public class CustomGrid : MonoBehaviour
             if(t.gameObject.GetComponent<Tile>()==null)
                 t.gameObject.AddComponent<Tile>();
 
-            t.GetComponent<Tile>().GetNeighbours();
-            t.GetComponent<Tile>().ChangeColor();
-        }        
-    }
+            t.GetComponent<Tile>().SetNeighbours();
+        }
 
-    [Button]
+        UpdateGrid();
+    }
+   
     public void UpdateGrid()
     {
         Tiles = new List<Transform>();
@@ -56,8 +41,26 @@ public class CustomGrid : MonoBehaviour
         }        
     }
 
-    public List<Transform> GetPath()
+    public void ArrangeRow(int startingIndex = 0, int row = 0)
     {
+        int count = 0;
+
+        for (int i = startingIndex; i < width + startingIndex; i++)
+        {
+            Tiles[i].position = new Vector3(count, 0, row);
+
+            if (i == Tiles.Count - 1)
+                return;
+
+            count++;
+        }
+
+        ArrangeRow(startingIndex + width, row + 1);
+    }
+
+    public List<Transform> GetTiles()
+    {
+        Arrange();
         return Tiles;
     }
 }

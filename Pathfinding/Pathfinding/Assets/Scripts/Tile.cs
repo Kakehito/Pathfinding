@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
+
 public class Tile : MonoBehaviour
 {
     CustomGrid gridManager;
 
-    public float startWeight;    
-    public float addedWeight;
-    public float totalWeight;
 
-    public Transform neighbourAbove;
-    public Transform neighbourBelow;
-    public Transform neighbourLeft;
-    public Transform neighbourRight;
+    public float startWeight = 10000;    
+    public float addedWeight = 10000;
+    public float totalWeight = 10000;
 
-    public void GetNeighbours()
+
+    Transform neighbourAbove;
+    Transform neighbourBelow;
+    Transform neighbourLeft;
+    Transform neighbourRight;
+
+    public void SetNeighbours()
     {
         gridManager = GetComponentInParent<CustomGrid>();
 
@@ -24,6 +27,29 @@ public class Tile : MonoBehaviour
         neighbourBelow = getBelow();
         neighbourLeft = getLeft();
         neighbourRight = getRight();
+    }
+
+    public List<Tile> GetNeighbours()
+    {
+        List<Tile> t = new List<Tile>();
+        if (neighbourAbove != null)
+            t.Add(neighbourAbove.GetComponent<Tile>());
+        if (neighbourBelow != null)
+            t.Add(neighbourBelow.GetComponent<Tile>());
+        if (neighbourLeft != null)
+            t.Add(neighbourLeft.GetComponent<Tile>());
+        if (neighbourRight != null)
+            t.Add(neighbourRight.GetComponent<Tile>());
+        return t;
+    }
+
+    public Tile GetLowestWeightTile()
+    {
+        Tile i = new Tile();
+       
+        foreach(Tile t in GetNeighbours()){ i = (t.totalWeight < i.totalWeight) ? t : i;}
+
+        return i;
     }
 
     public Transform getAbove()
@@ -74,23 +100,6 @@ public class Tile : MonoBehaviour
         return null;
     }
 
-    public void ChangeColor()
-    {
-        totalWeight = startWeight + addedWeight;
-        gameObject.GetComponent<MeshRenderer>().material.color = Color.Lerp(Color.blue, Color.red, totalWeight * 0.12f);
-    }
 
-    public List<Tile> ReturnTransformList()
-    {
-        List<Tile> t = new List<Tile>();
-        if (neighbourAbove != null)
-        t.Add(neighbourAbove.GetComponent<Tile>());
-        if(neighbourBelow != null)
-        t.Add(neighbourBelow.GetComponent<Tile>());
-        if(neighbourLeft != null)
-        t.Add(neighbourLeft.GetComponent<Tile>());
-        if(neighbourRight != null)
-        t.Add(neighbourRight.GetComponent<Tile>());
-        return t;
-    }
+    
 }

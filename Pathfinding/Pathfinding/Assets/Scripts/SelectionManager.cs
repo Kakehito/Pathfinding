@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
-    public PathfindingManager manager;
-    public CustomGrid grid;
+    PathfindingManager manager;
+    CustomGrid grid;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +25,6 @@ public class SelectionManager : MonoBehaviour
             {
                 if (hit.transform.tag == "Grid")
                 {
-                    manager.currentTarget = hit.transform;
-                    manager.SetWeight();
                     grid.UpdateGrid();
                     grid.Arrange();
                 }
