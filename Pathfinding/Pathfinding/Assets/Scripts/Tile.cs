@@ -8,11 +8,9 @@ public class Tile : MonoBehaviour
 {
     CustomGrid gridManager;
 
-
     public float startWeight = 10000;    
     public float addedWeight = 10000;
     public float totalWeight = 10000;
-
 
     Transform neighbourAbove;
     Transform neighbourBelow;
@@ -100,6 +98,14 @@ public class Tile : MonoBehaviour
         return null;
     }
 
+    public void ChangeColor()
+    {
+        GetComponent<MeshRenderer>().material.color = Color.green;
+    }
 
-    
+    private void Update()
+    {
+        startWeight = totalWeight + addedWeight;
+    }
+
 }

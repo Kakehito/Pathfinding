@@ -5,30 +5,26 @@ using NaughtyAttributes;
 
 public class CustomGrid : MonoBehaviour
 {
-    
-
     [OnValueChanged("Arrange")]
     public int width;
 
     public List<Transform> Tiles;
-
-
-
+       
     [Button("Update")]
     public void Arrange()
     {
-        ArrangeRow();
+        UpdateGrid();
 
-        foreach(Transform t in Tiles)
+        ArrangeRow();
+        
+        foreach (Transform t in Tiles)
         {
             if(t.gameObject.GetComponent<Tile>()==null)
                 t.gameObject.AddComponent<Tile>();
 
             t.GetComponent<Tile>().SetNeighbours();
-        }
-
-        UpdateGrid();
-    }
+        }        
+    }   
    
     public void UpdateGrid()
     {

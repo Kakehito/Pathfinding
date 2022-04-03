@@ -101,6 +101,11 @@ public class PathfindingManager : MonoBehaviour
 
         _path.Add(_targetTile);
         request.Agent.SetPath(_path);
+
+        foreach(Tile t in _path)
+        {
+            t.ChangeColor();
+        }
        
     }
 
@@ -109,7 +114,8 @@ public class PathfindingManager : MonoBehaviour
     {
         foreach (Transform b in map.GetTiles())
         {
-            b.GetComponent<Tile>().startWeight = Vector3.Distance(b.position, target.position);  
+            b.GetComponent<Tile>().startWeight = Vector3.Distance(b.position, target.position);
+            b.GetComponent<Tile>().startWeight += b.GetComponent<Tile>().addedWeight;
         }
     }
   

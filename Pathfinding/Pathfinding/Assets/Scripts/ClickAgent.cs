@@ -36,8 +36,12 @@ public class ClickAgent : MonoBehaviour, IAgent
 
             if (dist < Margin && StartingTile != Path[Path.Count - 1]) 
                 _currentpoint++;
+        }
 
-
+        if(Path[Path.Count-1] == StartingTile)
+        {
+            foreach(Tile t in Path)
+                t.gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
         }
     }
 
