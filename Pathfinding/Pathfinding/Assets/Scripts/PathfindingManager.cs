@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
-
+using System.Threading.Tasks;
 [System.Serializable]
 public struct PathRequest
 {
@@ -30,27 +30,49 @@ public class PathfindingManager : MonoBehaviour
     #endregion
 
     CustomGrid map;
+    
+    public List<PathRequest> RequestQueue;
+
+    int currentrequest;
+
+    [Button]
+    public async void FufillRequest()
+    {
+        if (currentrequest == RequestQueue.Count) return;
+        await Fufill(currentrequest);
+        currentrequest++;
+        FufillRequest();
+    }
 
 
     private void Start()
     {
+        RequestQueue = new List<PathRequest>();
         map = GetComponent<CustomGrid>();
     }
 
-    public List<PathRequest> RequestQueue;
 
-
-    [Button]
-    public void FufillRequest()
+    private void Update()
     {
-        CalculatePath(RequestQueue[0]);
+        if(currentrequest <= RequestQueue.Count - 1)
+        {
+            FufillRequest();
+        }
     }
+
+
+    public async Task Fufill(int req)
+    {
+        CalculatePath(RequestQueue[req]);
+        await Task.Yield();
+    }
+
+    
 
     public void AddRequest(PathRequest request)
     {
         RequestQueue.Add(request);
     }
-
 
 
     public void CalculatePath(PathRequest request)
@@ -65,7 +87,6 @@ public class PathfindingManager : MonoBehaviour
 
         while(_current != _targetTile)
         {
-            _current.GetComponent<MeshRenderer>().material.color = Color.red;
             _path.Add(_current);
 
             Tile st = gameObject.GetComponent<Tile>();
@@ -80,11 +101,8 @@ public class PathfindingManager : MonoBehaviour
 
         _path.Add(_targetTile);
         request.Agent.SetPath(_path);
-
+       
     }
-
-
-
 
  
     public void SetWeight(Transform target)

@@ -1022,10 +1022,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0811909ecc5ca14f888ecb7790fc8c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1
+  Speed: 3
   Margin: 1.1
-  StartingTile: {fileID: 195297873}
-  TargetTile: {fileID: 398383648}
+  StartingTile: {fileID: 83899431}
+  TargetTile: {fileID: 59739491}
   Path: []
 --- !u!136 &205965979
 CapsuleCollider:
@@ -10105,6 +10105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cd8d4b3b30b00344b605a6f0c8ede9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 205965978}
 --- !u!114 &1984554138
 MonoBehaviour:
   m_ObjectHideFlags: 0

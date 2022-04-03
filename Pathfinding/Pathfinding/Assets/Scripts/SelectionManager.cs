@@ -7,6 +7,8 @@ public class SelectionManager : MonoBehaviour
     PathfindingManager manager;
     CustomGrid grid;
 
+    public ClickAgent agent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class SelectionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -27,6 +29,8 @@ public class SelectionManager : MonoBehaviour
                 {
                     grid.UpdateGrid();
                     grid.Arrange();
+                    agent.TargetTile = hit.transform.GetComponent<Tile>();
+                    agent.GetPath();
                 }
             }
         }
