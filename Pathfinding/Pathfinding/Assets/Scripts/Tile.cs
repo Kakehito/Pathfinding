@@ -10,12 +10,17 @@ public class Tile : MonoBehaviour
 
     public float startWeight = 10000;    
     public float addedWeight = 10000;
-    public float totalWeight = 10000;
+
 
     Transform neighbourAbove;
     Transform neighbourBelow;
     Transform neighbourLeft;
     Transform neighbourRight;
+
+    private void Start()
+    {
+        startWeight += addedWeight;
+    }
 
     public void SetNeighbours()
     {
@@ -45,7 +50,7 @@ public class Tile : MonoBehaviour
     {
         Tile i = new Tile();
        
-        foreach(Tile t in GetNeighbours()){ i = (t.totalWeight < i.totalWeight) ? t : i;}
+        foreach(Tile t in GetNeighbours()){ i = (t.startWeight < i.startWeight) ? t : i;}
 
         return i;
     }
@@ -98,14 +103,8 @@ public class Tile : MonoBehaviour
         return null;
     }
 
-    public void ChangeColor()
+    public void ChangeColor(float rare)
     {
-        GetComponent<MeshRenderer>().material.color = Color.green;
+        GetComponent<MeshRenderer>().material.color = Color.Lerp(Color.black,Color.white, rare);
     }
-
-    private void Update()
-    {
-        startWeight = totalWeight + addedWeight;
-    }
-
 }

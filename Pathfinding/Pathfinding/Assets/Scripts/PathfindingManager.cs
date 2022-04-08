@@ -104,7 +104,7 @@ public class PathfindingManager : MonoBehaviour
 
         foreach(Tile t in _path)
         {
-            t.ChangeColor();
+            t.ChangeColor(1);
         }
        
     }

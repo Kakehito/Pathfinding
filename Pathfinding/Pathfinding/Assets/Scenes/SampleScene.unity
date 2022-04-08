@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -171,7 +171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &29146415
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -282,7 +281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &59208697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -393,7 +391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &195080787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -504,7 +501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &195297874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -729,7 +725,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &226212868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -840,7 +835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &261256670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -951,7 +945,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &298040539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1062,7 +1055,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &430182367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1173,7 +1165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &445268996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1284,7 +1275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &463421204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1395,7 +1385,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &477702744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1506,7 +1495,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &567079481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1617,7 +1605,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &585670200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1728,7 +1715,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &588574368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1839,7 +1825,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &606651724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1950,7 +1935,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &614171238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2061,7 +2045,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &617387117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2172,7 +2155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &653496038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2376,7 +2358,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &726625140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2439,6 +2420,120 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726625137}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &736164989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736164994}
+  - component: {fileID: 736164993}
+  - component: {fileID: 736164992}
+  - component: {fileID: 736164991}
+  - component: {fileID: 736164990}
+  m_Layer: 0
+  m_Name: Player (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &736164990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736164989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc1e065aea91e048a280ccc11ba0d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: []
+  Speed: 2
+  Margin: 1.1
+  StartingTile: {fileID: 995823606}
+  TargetTile: {fileID: 995823606}
+--- !u!136 &736164991
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736164989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &736164992
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736164989}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &736164993
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736164989}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &736164994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736164989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.76, y: 1, z: 2.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749554477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2582,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 1000
-  totalWeight: 5
 --- !u!65 &749554480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2598,7 +2692,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &807919155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2709,7 +2802,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &840398997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2820,7 +2912,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &855339717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2931,7 +3022,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &892801611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3125,7 +3215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &974417494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3236,7 +3325,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &979734577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3347,7 +3435,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &995823607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3458,7 +3545,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1011927729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3569,7 +3655,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1025055315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3680,7 +3765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1043961690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3791,7 +3875,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1050337954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3902,7 +3985,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1076055509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4013,7 +4095,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1093127589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4124,7 +4205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1145123624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4235,7 +4315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1167463000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4346,7 +4425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1312112497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4457,7 +4535,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1396577561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4568,7 +4645,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1467106256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4679,7 +4755,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1479605356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4790,7 +4865,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1522417410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4901,7 +4975,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1533219487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5012,7 +5085,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 1000
-  totalWeight: 5
 --- !u!65 &1558505343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5123,7 +5195,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1570604753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5234,7 +5305,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1609449655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5345,7 +5415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1617857991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5456,7 +5525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1750930271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5567,7 +5635,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1810778087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5678,7 +5745,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1853392542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5789,7 +5855,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1867125568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5900,7 +5965,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &1877890616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6159,7 +6223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 10000
   addedWeight: 10000
-  totalWeight: 10000
 --- !u!1 &2009330186
 GameObject:
   m_ObjectHideFlags: 0
@@ -6208,7 +6271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &2009330189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6319,7 +6381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &2029251257
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6430,7 +6491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &2057772090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6630,7 +6690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWeight: 0
   addedWeight: 5
-  totalWeight: 5
 --- !u!65 &2135552051
 BoxCollider:
   m_ObjectHideFlags: 0

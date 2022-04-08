@@ -32,7 +32,7 @@ public class ClickAgent : MonoBehaviour, IAgent
 
             float dist = Vector3.Distance(_transform.position, StartingTile.transform.position);
             Vector3 targetPos = new Vector3(StartingTile.transform.position.x, 1, StartingTile.transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, targetPos,   Speed  * Time.deltaTime / dist);
+            _transform.position = Vector3.Lerp(transform.position, targetPos,   Speed  * Time.deltaTime / dist);
 
             if (dist < Margin && StartingTile != Path[Path.Count - 1]) 
                 _currentpoint++;
